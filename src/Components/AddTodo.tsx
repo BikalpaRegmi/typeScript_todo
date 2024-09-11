@@ -13,16 +13,17 @@ const AddTodo = () => {
 
   return (
     <div className="">
-      <form action="" onSubmit={addOnList}>
+      <form action="" className="flex mt-5 gap-1" onSubmit={addOnList}>
         <input
-          type="text"
+                  type="text"
+                  placeholder="Type here"
           value={todo}
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
             setTodo(e.target.value)
           }
-          className="border-2 "
+          className="border-2 text-xl ml-9  w-[60%] pl-3"
         />
-        <button type="submit"> submit</button>
+        <button type="submit" className="border-2 px-5 text-xl bg-yellow-900 text-white hover:bg-orange-800 rounded-xl"> Submit</button>
       </form>
     </div>
   );
